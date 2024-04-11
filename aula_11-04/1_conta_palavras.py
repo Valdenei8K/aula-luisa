@@ -8,5 +8,8 @@ texto = input("Digite um texto: ")
 
 numero_de_palavras = 0
 # Seu código para contar as palavras vai aqui
+if texto:
+    numero_de_palavras = texto.count(' ') + 1
+
 
 print(f"O número de palavras é: {numero_de_palavras}")
