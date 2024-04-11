@@ -8,7 +8,7 @@
 peso = float(input("Digite seu peso em kg: "))
 altura = float(input("Digite sua altura em metros: "))
 
-imc = 0  # Cálculo do IMC precisa ser corrigido
+imc = peso/(altura*altura)  # Cálculo do IMC precisa ser corrigido
 
 # Classificação do IMC (faltam informações)
 if imc < 18.5:
