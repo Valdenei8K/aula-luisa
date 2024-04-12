@@ -15,6 +15,11 @@ while tentativas > 0:
     if palpite == numero_secreto:
         print("Parabéns! Você acertou.")
         break
+    elif palpite>numero_secreto:
+        print("Um pouco mais baixo")
+    else: 
+        print("Um pouco mais alto")    
     tentativas -= 1
+    
 
 print("Fim do jogo.")
