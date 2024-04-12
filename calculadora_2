@@ -1,0 +1,34 @@
+while True:
+    valor1 = input("Digite um número (ou -1 para sair): ")
+    if valor1 == '-1':
+        print("Programa encerrado.")
+        break
+    
+    operador = input("Digite o operador (+, -, *, /) ou -1 para sair: ")
+    if operador == '-1':
+        print("Programa encerrado.")
+        break
+    
+    valor2 = input("Digite outro número ou -1 para sair: ")
+    if valor2 == '-1':
+        print("Programa encerrado.")
+        break
+
+    valor1 = float(valor1)
+    valor2 = float(valor2)
+
+    resultado = 0
+    if operador == '+':
+        resultado = valor1 + valor2
+    elif operador == '-':
+        resultado = valor1 - valor2
+    elif operador == '*':
+        resultado = valor1 * valor2
+    elif operador == '/':
+        if valor2 != 0:
+            resultado = valor1 / valor2
+        else:
+            print("Não é possível dividir por zero.")
+            continue
+
+    print("Resultado:", resultado)
