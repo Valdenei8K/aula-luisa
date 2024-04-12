@@ -7,7 +7,10 @@
 
 texto = input("Digite um texto: ")
 
-texto_invertido = ''  # Esta linha pode precisar de ajustes
+texto = texto.lower() #transforma em minuscula
+texto = texto.replace(" ", "") #substitui espaços vazios e faz uma só string grande
+
+texto_invertido = texto[::-1] # inverte o texto
 
 if texto == texto_invertido:
     print("É um palíndromo!")
