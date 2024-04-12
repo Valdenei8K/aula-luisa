@@ -5,11 +5,12 @@
 # Considere uma palavra como qualquer sequência de caracteres delimitada por espaços.
 
 texto = input("Digite um texto: ")
-
 numero_de_palavras = 0
+texto_sem_espacos = texto.strip() #remove espaços do final e do começo
 # Seu código para contar as palavras vai aqui
-if texto:
-    numero_de_palavras = texto.count(' ') + 1
-
+if texto_sem_espacos:
+    numero_de_palavras = texto_sem_espacos.count(' ') + 1
+#a função count , conta quantas vezes no testo o espaço em branco ' ' se repete
+#e adiciona mais um , ja que o numero de espaço é menor uma vez em relação ao numero de palavras
 
 print(f"O número de palavras é: {numero_de_palavras}")
